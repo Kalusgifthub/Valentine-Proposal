@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffebf0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        h1 {
+            color: #e6005c;
+        }
+        .buttons button {
+            margin: 20px;
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .yes {
+            background-color: #ff4081;
+            color: white;
+        }
+        .no {
+            background-color: #ddd;
+            color: black;
+        }
+        .yes:hover {
+            background-color: #e6005c;
+        }
+        .no:hover {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Be My Valentine? ❤️</h1>
+        <div class="buttons">
+            <button class="yes" onclick="yesClicked()">Yes 💖</button>
+            <button class="no" onclick="noClicked()">No 😢</button>
+        </div>
+        <p id="response" style="font-size: 20px; color: #e6005c; margin-top: 20px;"></p>
+    </div>
+
+    <script>
+        function yesClicked() {
+            document.getElementById('response').innerText = "Yay! You just made my day! 💕";
+        }
+        function noClicked() {
+            document.getElementById('response').innerText = "Are you sure? 🥺";
+        }
+    </script>
+</body>
+</html>
